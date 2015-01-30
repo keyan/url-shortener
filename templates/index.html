@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>URL Shortner</title>
+    <link href="static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="static/css/theme.css" rel="stylesheet">
+  </head>
+  <body>
+  <div class="container">
+    <div class="row">
+      <center><h1>URL Shortner for Great Good!</h1></center>
+      <form method="POST">
+        <div class="col-lg-2">
+          <input class="form-control input-lg" type="text" placeholder="Long URL" name="original_url">
+          <button type="submit" class="btn btn-lg btn-success">Submit</button>
+        </div>
+      </form>
+
+    {% if short_url %}
+      <p> {{short_url}} </p>
+    {% endif %}
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+  </body>
+</html>

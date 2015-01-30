@@ -12,3 +12,21 @@ body {
 h1 {
   color: #FFFFFF;
 }
+
+.jumbotron {
+  background: #9f82dd;
+  text-align: center;
+  margin-top: 150px;
+}
+
+.jumbotron h1 {
+    color: #ffffff;;
+}
+
+.jumbotron p {
+    color: #ffffff;;
+}
+
+.btn{
+    margin-top: 25px;
+}

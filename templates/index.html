@@ -20,7 +20,10 @@
       </form>
 
     {% if short_url %}
-      <p> {{short_url}} </p>
+      <div class="jumbotron">
+        <p>Your new URL is so tiny!</p>
+        <h1>{{short_url}}</h1>
+      </div>
     {% endif %}
 
     </div>

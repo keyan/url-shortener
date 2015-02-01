@@ -23,8 +23,8 @@ def index():
                      (short_url,
                       request.form['original_url']))
         g.db.commit()
-        #short_url = "http://shortenr.herokuapp.com/" + str(short_url)
-        short_url = "http://127.0.0.1:5000/" + str(short_url)
+        short_url = "http://shortenr.herokuapp.com/" + str(short_url)
+        # short_url = "http://127.0.0.1:5000/" + str(short_url)
         return render_template("index.html", short_url=short_url)
     return render_template("index.html")
 
